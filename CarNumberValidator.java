@@ -16,7 +16,7 @@ public class CarNumberValidator {
             if (input.equalsIgnoreCase("exit")) {
                 break;
             }
-
+            input=input.replaceAll(" ","");
             ValidationResult validationResult = validateCarNumber(input);
             if (validationResult.isValid()) {
                 System.out.println("Регистрационный номер автомобиля введен корректно.");
